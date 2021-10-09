@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petstagram | Inicio</title>
+    <title>Registro | Petstagram</title>
+    <meta name="description" content="Crea tu cuenta Petstagram para subir el contenido divertido de tu mascota.
+    Animate!! ya somos más de 20.000 usuarios compartiendo grandiosas historias">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 
@@ -45,30 +47,37 @@
                 </div>
                 <p class="slogan">El mundo de tu mascota</p>
 
-
-
                 <form class="form" action="">
-                    <label for="nombre" id="name-label">Nombre</label>
-                    <input id="nombre" type="text" name="nombre" required placeholder="Usuario">
+                    <label for="nombre" id="name-label"></label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Ingresa tu usuario">
 
-                    <label for="email" id="email-label">E-mail</label>
-                    <input id="email" type="email" name="email" required placeholder="Correo electrónico">
+                    <label for="email" id="email-label"></label>
+                    <input id="email" type="email" name="email" placeholder="Correo electrónico">
 
-                    <label for="password" id="password-label">Constraseña</label>
-                    <input id="password" type="password" name="password" required placeholder="Contraseña">
+                    <label for="password" id="password-label"></label>
+                    <input id="password" type="password" name="password" placeholder="Contraseña">
 
-                    <label for="confpassword" id="confpassword-label">Confirma tu constraseña</label>
-                    <input id="confpassword" type="password" name="confpassword" required
-                    placeholder="Confirmación de contraseña">
-                    <input type="submit" id="submit" value="Registrar"/>
-                    <label for="terminos"><input id="terminos" type="checkbox" name="terminos" required> Aceptar Términos y Condiciones</label>
+                    <label for="confpassword" id="confpassword-label"></label>
+                    <input id="confpassword" type="password" name="confpassword"
+                        placeholder="Confirmación de contraseña">
+                    <label for="terminos" id="terminos" class="terminos">
+                    <input id="terminos" type="checkbox" class="checkbox" name="terminos" required autofocus>
+                    <a class="text-term" href="" target="_blank">Términos y Condiciones</a></label>
+                    <input type="submit" id="submit" value="Registrar" />
                 </form>
             </section>
         </section>
     </main>
+    <script></script>
 </body>
-<footer>
 
+<footer class="footer">
+    <div class="content-footer">
+        <p class="footer-text">Petstagram&copy;2021</p>
+        <div class="img-footer">
+            <img src="./img/imglogo.svg" alt="Logo-Petstagram" />
+        </div>
+    </div>
 </footer>
 
 </html>
