@@ -3,21 +3,35 @@
 /*FUENTES*/
 @font-face {
 	font-family: "Poppins";
-	src: url("fonts/Poppins/Poppins-Regular.ttf");
+	src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
 	font-weight: normal;
 	font-style:normal;
   }
   
   @font-face {
 	font-family: "PT_Sans";
-	src: url("fonts/PT_Sans/PT_Sans-Bold.ttf");
+	src: url("../fonts/PT_Sans/PTSans-Bold.ttf");
 	font-weight: normal;
 	font-style:normal;
   }
   
   @font-face {
 	font-family: "Ubuntu";
-	src: url("fonts/Ubuntu/Ubuntu-Regular.ttf");
+	src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: "ArchitectsDaughter";
+	src: url("../fonts/ArchitectsDaughter/ArchitectsDaughter-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto/Roboto-Regular.ttf");
 	font-weight: normal;
 	font-style: normal;
   }
@@ -28,13 +42,14 @@
 	box-sizing: border-box;
 }
 
+/*Barra de Navegacion*/
 .navbar{
 	display: flex;
 	width: 100%;
 	height: 15%;
 	justify-content: space-around;
 	align-items: center;
-	background-color: brown;
+	background-color: #6a040f;
 }
 
 .navbar .logo{
@@ -45,6 +60,7 @@
 	justify-content: center;
 }
 
+/*Logo*/
 .img-logo{
 	display: flex;
 	width: 10%;
@@ -58,18 +74,22 @@
 	rotate: 90deg;
 }
 
-.img-logo p{
+ .text-logo{
+	font-family: "Ubuntu";
 	display: flex;
+	height: 65px;
 	color: #fff;
 	font-size: 50px;
 }
 
+/*Menú*/
 .navbar ul{
 	display: flex;
 	flex-direction: row-reverse;
 }
 
 .navbar ul li{
+	font-family: "Poppins";
 	display: flex;
 	font-size: 20px;
 }
@@ -80,6 +100,188 @@
 	justify-content: center;
 	text-decoration: none;
 	color: #fff;
+}
+/*Contenedor principal*/
+.content{
+    display: flex;
+	width: 100%;
+	height: 100vh;
+	padding: 0% 10% 0% 10%;
+	justify-content: center;
+}
+
+.content .section{
+	display: flex;
+	width: 70%;
+	height: 85%;
+	flex-direction: row;
+	border: 2px solid #00C17E;
+    border-radius: 20px;
+    align-self: center;
+
+}
+
+/*Contenedor de ingreso*/
+.section .welcome{
+	display: flex;
+	width: 55%;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.welcome-title{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+    align-items: center;
+	justify-content: center;
+	margin-top: 20%;
+    z-index: 1;  
+}
+
+/*Contenedor de la imagen*/
+.section .img-page{
+	display: flex;
+	flex-basis: 50%;
+	height: auto;
+	justify-content: start;
+	margin-top: -46%;
+}
+
+/*Imagen*/
+.img-page img{
+	display: block;
+	max-width: 100%;
+	height: 101.8%;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.welcome-title .text-logo{
+	font-size: 2vmax;
+	color: #6a040f;
+	text-align: center;
+}
+
+.logo-title{
+	display: flex;
+	width: 7%;
+}
+
+.logo-title img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	rotate: 90deg;
+}
+
+
+ .welcome .text{
+	font-family: "PT_Sans";
+	width: 100%;
+	height: auto;
+	font-size: 5vmax;
+	text-align: center;
+	color: #fff;
+}
+
+/*Contenedor del Formulario*/
+
+section .contform{
+	display: flex;
+	width: 55%;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contform .logo-form{
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.logo-form .text-logo{
+	font-family: "Ubuntu";
+	display: flex;
+	height: 65px;
+	color: rgb(235, 13, 13);
+	font-size: 50px;
+}
+
+.contform .slogan{
+	font-family: "ArchitectsDaughter";
+	width: 100%;
+	height: 5%;
+	font-size: 1.3vmax;
+	font-style: italic;
+	text-align: center;
+	color: #f48c06;
+	margin: -3% 0% 2% -1%;
+}
+
+.contform .form{
+	display: flex;
+	width: 95%;
+	height: auto;
+	flex-direction: column;
+	padding: 1%;
+	/*border: 1px solid #ccc;*/
+	border-radius: 5px;
+	margin: 1%;
+}
+
+.contform label{
+    font-family: "Roboto";
+	font-style: normal;
+    font-size: 17px;
+  } 
+
+  .contform input[type="text"],
+  .contform input[type="email"],
+  .contform input[type="password"]{
+    font-family: "Roboto";
+    height: 30px;
+    font-size: 15px;
+    color: rgb(66, 65, 65);
+    margin-bottom: 3.5%;
+    border-color: transparent;
+    /*border-bottom: 1px solid rgba(200, 199, 199, 0.4);*/
+    background-color: transparent;
+    transition: all 300ms;
+    outline:none;
+  }
+
+  .contform input[type="text"]:focus{
+  color: rgb(243, 243, 243);
+  }
+
+  .contform input[type="email"]:focus{
+	color: rgb(243, 243, 243);
+	}
+
+  .contform input[type="password"]:focus{
+	color: rgb(243, 243, 243);
+   }
+
+  .contform input[type="submit"]{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  font-family: "Roboto";
+  font-size: 125%;
+  width: 22%;
+  padding: 1%;
+  cursor: pointer;
+  background-color: #f48c06;
+  border-color: transparent;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  transition: all 300ms;
+  align-self: center; 
+
 }
 
 /*------------------------------------*/

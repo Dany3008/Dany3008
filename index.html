@@ -1,51 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 
-	<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Petstagram | Inicio</title>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petstagram | Inicio</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
 
-	<body>
-		<header>
-			<nav class="navbar">
-				<div class="logo">
-                    <div class="img-logo">
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="img-logo">
                     <p class="text-logo">Petstagram</p>
                     <img src="./img/imglogo.svg" alt="Logo-Petstagram" />
+                </div>
+            </div>
+            <ul>
+                <!-- <li><a href="#">Regístrate</a></li> -->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">A cerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="section">
+            <div class="welcome">
+                <div class="welcome-title">
+                    <p class="text">Bienvenido</p>
+                </div>
+                <div class="img-page">
+                    <img src="./img/dog4.jpg" alt="Imagen de perros">
+                </div>
+            </div>
+
+            <section class="contform">
+                <div class="logo-form">
+                    <h1 class="text-logo">Petstagram</h1>
+                    <div class="logo-title">
+                        <img src="./img/imglogo.svg" alt="Logo-Petstagram" />
                     </div>
-				</div>
-				<ul>
-					<!-- <li><a href="#">Regístrate</a></li> -->
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="#">A cerca de</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main class="content">
-            <section class="welcome">
-             <div class="welcome-title">
-                <h1>Bienvenido a Petstagram</h1>
-                <p>La red social de tu mascota <img src="./img/imgtitle.svg" alt="Imagen del título"></p>
-             </div>
+                </div>
+                <p class="slogan">El mundo de tu mascota</p>
 
-             <div class="enter-buttons">
-                <div class="button-register">
-                    <a href="#">Regístrate</a> 
-                </div>
-                <div class="login-button">
-                    <a href="#">Ingresar</a> 
-                </div>
-             </div>
+
+
+                <form class="form" action="">
+                    <label for="nombre" id="name-label">Nombre</label>
+                    <input id="nombre" type="text" name="nombre" required placeholder="Usuario">
+
+                    <label for="email" id="email-label">E-mail</label>
+                    <input id="email" type="email" name="email" required placeholder="Correo electrónico">
+
+                    <label for="password" id="password-label">Constraseña</label>
+                    <input id="password" type="password" name="password" required placeholder="Contraseña">
+
+                    <label for="confpassword" id="confpassword-label">Confirma tu constraseña</label>
+                    <input id="confpassword" type="password" name="confpassword" required
+                    placeholder="Confirmación de contraseña">
+                    <input type="submit" id="submit" value="Registrar"/>
+                    <label for="terminos"><input id="terminos" type="checkbox" name="terminos" required> Aceptar Términos y Condiciones</label>
+                </form>
             </section>
-		</main>
-	</body>
-	<footer>
+        </section>
+    </main>
+</body>
+<footer>
 
-	</footer>
+</footer>
+
 </html>
 
 
@@ -111,7 +136,8 @@
         </div>
     </div>
 
-     <script src="js/scripts.js"></script> --> <!-- tradicionalmente acá irían los script. se deja para efectos de ejemplo 
+     <script src="js/scripts.js"></script> -->
+<!-- tradicionalmente acá irían los script. se deja para efectos de ejemplo 
 </body>
 </html>
 
